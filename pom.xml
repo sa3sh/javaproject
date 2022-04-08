@@ -6,7 +6,8 @@
   <groupId>com.devops-mentors</groupId>
   <artifactId>DynamicJavaProject</artifactId>
   <packaging>pom</packaging>
-  <version>Chat-Release-2.2</version>
+
+
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.devops-mentors.info</url>
