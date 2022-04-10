@@ -5,6 +5,7 @@
 
   <groupId>com.devops-mentors</groupId>
   <artifactId>DynamicJavaProject</artifactId>
+  <version>Chat-Release-2.2</version>
   <packaging>pom</packaging>
 
 
