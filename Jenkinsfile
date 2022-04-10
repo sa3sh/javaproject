@@ -9,8 +9,8 @@ pipeline{
 
         pom_version_array=pom.groupId.split('com.')
         groupID="${pom_version_array[1]}" // devops-mentor
-        SONAR_URL=credentials('SONAR_IP') //"http://54.209.51.175:9000"
-        SONAR_LOGIN_KEY=credentials('Sonar_Project_token')
+        SONAR_URL ="http://3.93.67.130:9000/"   //credentials('SONAR_URL') //"http://54.209.51.175:9000"
+        SONAR_LOGIN_KEY=credentials('sonartoken')
         SONAR_PROJECT="sonarproject"
         ARTIFACTID="${pom.artifactId}"
         GROUPID="${pom.groupId}" //com.devops-mentor
@@ -18,9 +18,9 @@ pipeline{
         NEXUS_USER=credentials('NEXUS_USER') 
         NEXUS_PASSWORD= credentials('NEXUS_PASSWORD') 
         NEXUS_PROJECT_NAME="javanexusrepo"
-        NEXUS_ARTIFACT_URL="http://23.20.52.36:8081/repository/${NEXUS_PROJECT_NAME}/${groupID}/${ARTIFACTID}/${VERSION}/${ARTIFACTID}-${VERSION}.war"
+        NEXUS_ARTIFACT_URL="http://54.160.173.95:8081/repository/${NEXUS_PROJECT_NAME}/${groupID}/${ARTIFACTID}/${VERSION}/${ARTIFACTID}-${VERSION}.war"
         NEXUS_ARTIFACT_FILE_PATH="app/target/app.war"
-        TOMCAT_URL="http://3.80.94.62:8080/"
+        TOMCAT_URL="http://54.226.154.161:8080/"
     }
     
 
@@ -29,7 +29,7 @@ pipeline{
 
         stage("pull SCM"){
             steps{
-            git branch: 'main', url: 'https://github.com/krishnabati/devopsmentor.git'   
+            git branch: 'main', url: 'https://github.com/sa3sh/javaproject.git'   
                }
         }
        
