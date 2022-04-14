@@ -18,9 +18,9 @@ pipeline{
         NEXUS_USER=credentials('NEXUS_USER') 
         NEXUS_PASSWORD= credentials('NEXUS_PASSWORD') 
         NEXUS_PROJECT_NAME="javanexusrepo"
-        NEXUS_ARTIFACT_URL="http://54.160.173.95:8081/repository/${NEXUS_PROJECT_NAME}/${groupID}/${ARTIFACTID}/${VERSION}/${ARTIFACTID}-${VERSION}.war"
+        NEXUS_ARTIFACT_URL="http://18.212.90.165:8081//repository/${NEXUS_PROJECT_NAME}/${groupID}/${ARTIFACTID}/${VERSION}/${ARTIFACTID}-${VERSION}.war"
         NEXUS_ARTIFACT_FILE_PATH="app/target/app.war"
-        TOMCAT_URL="http://54.226.154.161:8080/"
+        TOMCAT_URL="http://3.95.18.20:8080/"
     }
     
 
