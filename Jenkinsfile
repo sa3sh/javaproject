@@ -9,7 +9,7 @@ pipeline{
 
         pom_version_array=pom.groupId.split('com.')
         groupID="${pom_version_array[1]}" // devops-mentor
-        SONAR_URL ="http://3.93.67.130:9000/"   //credentials('SONAR_URL') //"http://54.209.51.175:9000"
+        SONAR_URL ="http://18.232.174.123:9000/"   //credentials('SONAR_URL') //"http://54.209.51.175:9000"
         SONAR_LOGIN_KEY=credentials('sonartoken')
         SONAR_PROJECT="sonarproject"
         ARTIFACTID="${pom.artifactId}"
